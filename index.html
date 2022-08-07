@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cleaning schedule</title>
+    <!-- CSS for full calender -->
+    <link
+      href="https://fullcalendar.io/js/fullcalendar-3.8.2/fullcalendar.min.css"
+      rel="stylesheet"
+    />
+    <!-- JS for jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS for full calender -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js"></script>
+  </head>
+  <body>
+    <h1>Latviešu hatņika (Vannatuna) cleaning schedule</h1>
+    <div id="calendar"></div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $("#calendar").fullCalendar({
+        defaultView: "month",
+        events: [
+          {
+            title: "Roalds",
+            start: "2022-08-01",
+            end: "2022-08-07",
+          },
+          {
+            title: "Ričards",
+            start: "2022-08-08",
+            end: "2022-08-14",
+          },
+          {
+            title: "Oskars",
+            start: "2022-08-15",
+            end: "2022-08-21",
+          },
+          {
+            title: "Agneta, Ritvars + Mazgāšana",
+            start: "2022-08-22",
+            end: "2022-08-28",
+          },
+          {
+            title: "Gatis",
+            start: "2022-08-29",
+            end: "2022-09-04",
+          },
+          {
+            title: "Roalds",
+            start: "2022-09-05",
+            end: "2022-09-11",
+          },
+          {
+            title: "Ričards",
+            start: "2022-09-12",
+            end: "2022-09-18",
+          },
+          {
+            title: "Oskars",
+            start: "2022-09-19",
+            end: "2022-09-25",
+          },
+          {
+            title: "Agneta, Ritvars + Mazgāšana",
+            start: "2022-09-26",
+            end: "2022-10-02",
+          },
+        ],
+      });
+    });
+  </script>
+</html>
